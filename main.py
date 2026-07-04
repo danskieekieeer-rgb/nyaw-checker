@@ -1,5 +1,4 @@
-#!/usr/bin/env python3
-"""
+
 ╔══════════════════════════════════════════════════════════╗
 ║     𝐇𝐨𝐭𝐦𝐚𝐢𝐥 𝐌𝐚𝐬𝐭𝐞𝐫 𝐂𝐡𝐞𝐜𝐤𝐞𝐫 𝐁𝐨𝐭  —  MERGED v4.0         ║
 ║     Dev: {Dan}  |  Real DC-bot engine inside       ║
@@ -72,9 +71,9 @@ _CONFIG_PATH = os.path.join(_BASE, "config.json")
 with open(_CONFIG_PATH, "r", encoding="utf-8") as f:
     _cfg = json.load(f)
 
-BOT_TOKEN         = str(_cfg.get("8829262087:AAEJt-IHmrR5UUuP2su9TTSpnz4LZzA7FRw", ""))
-ADMIN_ID          = int(_cfg.get("6570045809", 0))
-DEV_NAME          = str(_cfg.get("Danskie", "D"))
+BOT_TOKEN         = str(_cfg.get("bot_token", ""))
+ADMIN_ID          = int(_cfg.get("admin_id", 0))
+DEV_NAME          = str(_cfg.get("dev_name", "D"))
 DEV_TAG           = f"Dev: {DEV_NAME}"
 MASTER_THREADS    = int(_cfg.get("master_threads", 30))
 INBOXER_THREADS   = int(_cfg.get("inboxer_threads", 30))
