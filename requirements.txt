@@ -1,0 +1,6 @@
+pyTelegramBotAPI
+beautifulsoup4
+rich
+httpx
+requests
+urlib3
